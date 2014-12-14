@@ -1,5 +1,6 @@
 ---
-# Example playbook that uses nodejs tasks for installing Node.js from source.
+# A playbook that installs a various dev tools
+# Used for provisioning an LXC container
 
 - hosts: containers
   sudo: True
