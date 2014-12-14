@@ -1,0 +1,18 @@
+---
+# File: basic-dev-tools.yml
+#
+# Description: Installs basic dev tools needed for doing just about anything
+#
+
+- name: Install C compiler
+  apt: pkg=gcc state=installed
+
+- name: Install C++ compiler
+  apt: pkg=g++ state=installed
+
+- name: Install JDK 7
+  apt: pkg=openjdk-7-jdk state=installed
+
+- name: Install OpenJDK 7
+  tags: java
+  apt: pkg=openjdk-7-jdk update-cache=yes state=latest

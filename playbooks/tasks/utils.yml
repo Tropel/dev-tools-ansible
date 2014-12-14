@@ -1,0 +1,14 @@
+---
+# File: basic-dev-tools.yml
+#
+# Description: Installs basic dev tools needed for doing just about anything
+#
+
+- name: Install nano
+  apt: pkg=nano state=installed
+
+- name: Install GIT
+  apt: pkg=git state=installed
+
+- name: Install make
+  apt: pkg=make state=installed

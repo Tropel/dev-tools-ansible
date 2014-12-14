@@ -1,0 +1,2 @@
+[containers]
+<HOST> ansible_connection=ssh ansible_ssh_user=<USER> ansible_sudo_pass=<SUDO_PASSWD>
