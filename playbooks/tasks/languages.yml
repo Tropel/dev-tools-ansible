@@ -10,9 +10,6 @@
 - name: Install C++ compiler
   apt: pkg=g++ state=installed
 
-- name: Install JDK 7
-  apt: pkg=openjdk-7-jdk state=installed
-
 - name: Install OpenJDK 7
   tags: java
   apt: pkg=openjdk-7-jdk update-cache=yes state=latest
