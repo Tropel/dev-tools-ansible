@@ -1,0 +1,15 @@
+---
+# A task for installing Leiningen (http://leiningen.org/)
+# This is originally from Owain Lewis' hackerlinks repo
+# https://github.com/owainlewis/hackerlinks/blob/master/provisioning/leiningen/roles/leiningen/tasks/main.yml
+
+
+- name: ensure wget is installed
+  apt: pkg=wget state=installed
+
+- name: get lein script
+  command: wget --no-check-certificate -O /usr/local/bin/lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+  sudo: True
+
+- name: make executable
+  command: chmod 755 /usr/local/bin/lein

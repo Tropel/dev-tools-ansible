@@ -24,3 +24,6 @@
 
     # Install node.js
     - include: "tasks/nodejs-from-src.yml"
+
+    # Install Leiningen
+    - include: "tasks/leiningen.yml"
