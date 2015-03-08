@@ -2,7 +2,7 @@
 # A playbook that installs a various dev tools
 # Used for provisioning an LXC container
 
-- hosts: containers
+- hosts: all
   sudo: True
   user: username
 
