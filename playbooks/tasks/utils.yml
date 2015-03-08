@@ -12,3 +12,6 @@
 
 - name: Install make
   apt: pkg=make state=installed
+
+- name: Install ant
+  apt: pkg=ant state=installed
