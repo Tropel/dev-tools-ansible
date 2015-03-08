@@ -1,8 +1,6 @@
 ---
-# File: basic-dev-tools.yml
-#
-# Description: Installs basic dev tools needed for doing just about anything
-#
+#  Installs basic dev tools needed for doing just about anything
+
 
 - name: Install C compiler
   apt: pkg=gcc state=installed
