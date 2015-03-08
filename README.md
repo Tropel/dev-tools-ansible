@@ -24,10 +24,10 @@ And then edit the file and specify one container to be provisioned:
 <target_host> ansible_connection=ssh ansible_ssh_user=<user_name> ansible_sudo_pass=<user_passwd>
 ```
 
-## Test the setup
+### Test the setup
 
 `$ ansible -i containers all -m ping`
 
-## Run the playbooks
+### Run the playbooks
 
 `$ ansible-playbook -i containers dev-tools.yml`
