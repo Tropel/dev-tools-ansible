@@ -5,4 +5,4 @@
   apt: pkg=bash-completion state=installed
 
 - name: Replace .bashrc with an improved version that contains git-prompt
-  copy: src=files/bashrc dest=/home/{{bash_user}}/.bashrc owner={{bash_user}}
+  copy: src=files/bashrc dest=/home/{{user}}/.bashrc owner={{user}}

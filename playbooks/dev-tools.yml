@@ -28,4 +28,4 @@
     - include: tasks/leiningen.yml
 
     # Misc configurations
-    - include: tasks/misc.yml bash_user={{ansible_ssh_user}}
+    - include: tasks/misc.yml user={{ansible_ssh_user}}
