@@ -6,3 +6,6 @@
 
 - name: Replace .bashrc with an improved version that contains git-prompt
   copy: src=files/bashrc dest=/home/{{user}}/.bashrc owner={{user}}
+
+- name: Add .bash_aliases with some useful goodies
+  copy: src=files/bash_aliases dest=/home/{{user}}/.bash_aliases owner={{user}}
