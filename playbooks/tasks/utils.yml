@@ -16,3 +16,6 @@
 
 - name: Install wget
   apt: pkg=wget state=installed
+
+- name: Install tree
+  apt: pkg=tree state=installed
