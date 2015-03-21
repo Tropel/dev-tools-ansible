@@ -1,0 +1,8 @@
+---
+# Misc configurations
+
+- name: install bash completion required by git-prompt
+  apt: pkg=bash-completion state=installed
+
+- name: Replace .bashrc with an improved version that contains git-prompt
+  copy: src=files/bashrc dest=/home/{{bash_user}}/.bashrc owner={{bash_user}}
