@@ -5,6 +5,11 @@
 - name: Install emacs
   apt: pkg=emacs24 state=installed
 
+- name: Install emacs-live
+  script: files/install-emacs-live.sh /home/{{user}} creates=/home/{{user}}/opt/emacs-live/init.el
+  sudo: no
+  remote_user: "{{user}}"
+
 - name: Install nano
   apt: pkg=nano state=installed
 
