@@ -2,6 +2,9 @@
 # Installs basic dev tools needed for doing just about anything
 
 
+- name: Install emacs
+  apt: pkg=emacs24 state=installed
+
 - name: Install nano
   apt: pkg=nano state=installed
 
