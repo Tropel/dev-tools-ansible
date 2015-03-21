@@ -4,7 +4,6 @@
 
 - hosts: all
   sudo: True
-  user: username
 
   vars:
     tasks_dir: "tasks"
@@ -17,16 +16,16 @@
   tasks:
 
     # Misc necessary utils like git, make etc
-    - include: "tasks/utils.yml"
+    - include: tasks/utils.yml
 
     # Install lang support
-    - include: "tasks/languages.yml"
+    - include: tasks/languages.yml
 
     # Install node.js
-    - include: "tasks/nodejs-from-src.yml"
+    - include: tasks/nodejs-from-src.yml
 
     # Install Leiningen
-    - include: "tasks/leiningen.yml"
+    - include: tasks/leiningen.yml
 
     # Misc configurations
     - include: tasks/misc.yml bash_user={{ansible_ssh_user}}
