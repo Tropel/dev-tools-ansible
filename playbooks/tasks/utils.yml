@@ -27,3 +27,9 @@
 
 - name: Install tree
   apt: pkg=tree state=installed
+
+- name: Install ack
+  apt: pkg=ack-grep state=latest
+
+- name: Rename ack-grep to ack
+  command: sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
