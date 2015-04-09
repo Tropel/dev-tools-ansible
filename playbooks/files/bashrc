@@ -114,3 +114,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Setup for making writing Clojurescript more convenient
+export LEIN_FAST_TRAMPOLINE=y
+alias cljsbuild="lein trampoline cljsbuild $@"

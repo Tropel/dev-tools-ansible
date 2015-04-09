@@ -4,7 +4,7 @@
 - name: install bash completion required by git-prompt
   apt: pkg=bash-completion state=installed
 
-- name: Replace .bashrc with an improved version that contains git-prompt
+- name: Replace .bashrc with an improved version that contains git-prompt and stuff for cljs
   copy: src=files/bashrc dest=/home/{{user}}/.bashrc owner={{user}}
 
 - name: Add .bash_aliases with some useful goodies
