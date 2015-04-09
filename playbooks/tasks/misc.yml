@@ -9,3 +9,6 @@
 
 - name: Add .bash_aliases with some useful goodies
   copy: src=files/bash_aliases dest=/home/{{user}}/.bash_aliases owner={{user}}
+
+- name: Add rlwrap
+  apt: pkg=rlwrap state=installed
