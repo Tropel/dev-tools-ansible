@@ -4,6 +4,13 @@ The tools installed are not a generic set of tools for any developer or any purp
 
 Subject to change and to be expanded.
 
+At least these are supported:
+
+* Clojure 
+* Clojurescript
+* Node.js
+* Java
+
 The node.js installation support is from https://github.com/aenglund/nodejs-ansible
 
 ## usage
