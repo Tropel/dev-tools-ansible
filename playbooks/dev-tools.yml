@@ -29,3 +29,6 @@
 
     # Misc configurations
     - include: tasks/misc.yml user={{ansible_ssh_user}}
+
+    # Install nginx
+    - include: tasks/nginx.yml
