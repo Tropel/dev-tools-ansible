@@ -15,20 +15,5 @@
 
   tasks:
 
-    # Misc necessary utils like git, make etc
-    - include: tasks/utils.yml user={{ansible_ssh_user}}
-
-    # Install lang support
-    - include: tasks/languages.yml
-
     # Install node.js
     - include: tasks/nodejs-from-src.yml
-
-    # Install Leiningen
-    - include: tasks/leiningen.yml
-
-    # Misc configurations
-    - include: tasks/misc.yml user={{ansible_ssh_user}}
-
-    # Install nginx
-    - include: tasks/nginx.yml
