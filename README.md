@@ -38,3 +38,7 @@ And then edit the file and specify one container to be provisioned:
 ### Run the playbooks
 
 `$ ansible-playbook -i containers dev-tools.yml`
+
+OR
+
+`$ ansible-playbook -i localhost, dev-tools.yml`

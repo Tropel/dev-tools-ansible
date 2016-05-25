@@ -3,6 +3,7 @@
 # Used for provisioning an LXC container
 
 - hosts: all
+  connection: local
   sudo: yes
 
   vars:
