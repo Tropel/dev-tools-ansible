@@ -30,3 +30,6 @@
 
 - name: Install ag silver searcher
   apt: pkg=silversearcher-ag state=latest
+
+- name: Install jq JSON pretty printer
+  apt: pkg=jq state=installed
